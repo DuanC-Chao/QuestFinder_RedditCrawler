@@ -1,0 +1,70 @@
+{
+    "platform": "reddit",
+    "crawl_mode": "global",
+    "description": "Global Reddit crawling for AI recipes only. A post is valid if it includes (1) AI or any AI tool mention AND (2) prompt/workflow signals. No subreddit restriction.",
+    "global_constraints": {
+      "required": [
+        "self:yes"
+      ],
+      "ai_signal_block": [
+        "AI",
+        "LLM",
+        "\"large language model\"",
+        "\"language model\"",
+        "\"foundation model\"",
+        "agent",
+        "assistant",
+        "\"artificial intelligence\"",
+  
+        "ChatGPT",
+        "Kimi",
+        "\"GPT-4\"",
+        "\"GPT-4o\"",
+        "Claude",
+        "Gemini",
+        "Copilot",
+        "Perplexity",
+        "NotebookLM",
+  
+        "Gamma",
+        "Tome",
+        "\"Nano-banana\"",
+        "Notion",
+        "Canva",
+        "Genspark",
+        "Manus",
+        "Skywork",
+        "Beautiful.ai",
+        "PowerPoint Copilot"
+      ],
+      "recipe_signal_block": [
+        "prompt",
+        "prompts",
+        "\"system prompt\"",
+        "workflow",
+        "pipeline",
+        "\"step by step\"",
+        "\"here's how\"",
+        "template"
+      ],
+      "deliverable_block": "(deck OR slides OR presentation OR powerpoint OR PPT)"
+    },
+    "scenes": {
+    "SLIDES_DECK": {
+      "deliverables": {
+        "汇报_周会_复盘_Deck": [
+          "(report OR update OR \"weekly update\" OR \"status update\" OR \"team update\" OR \"project update\" OR \"progress update\" OR \"weekly business review\" OR WBR OR QBR OR OKR OR \"monthly update\" OR \"quarterly update\" OR \"sprint review\" OR retrospective OR postmortem OR \"project review\" OR \"exec update\" OR \"leadership update\" OR \"stakeholder update\" OR readout)"
+        ],
+        "评审_决策_Deck": [
+          "(\"decision deck\" OR \"decision memo\" OR \"exec review\" OR \"executive review\" OR \"proposal deck\" OR \"options deck\" OR \"recommendation deck\" OR \"go/no-go\" OR \"design review\" OR \"product review\" OR \"PRD review\" OR \"architecture review\" OR \"tech review\" OR \"stakeholder review\")"
+        ],
+        "Pitch_Deck": [
+          "(\"pitch deck\" OR \"investor deck\" OR \"fundraising deck\" OR \"seed deck\" OR \"pre-seed deck\" OR \"Series A deck\" OR \"demo day\" OR \"startup deck\" OR fundraising OR investor OR \"venture\" OR VC OR \"pitching\" OR founder)"
+        ],
+        "学术汇报_课程_Presentation": [
+          "(\"academic presentation\" OR \"research presentation\" OR \"lab meeting\" OR \"group meeting\" OR \"paper presentation\" OR \"conference presentation\" OR \"poster presentation\" OR \"thesis defense\" OR \"dissertation defense\" OR \"final presentation\" OR capstone OR \"class presentation\" OR \"course presentation\" OR \"project presentation\" OR \"case presentation\")"
+        ]}
+      }
+    }
+  }
+  

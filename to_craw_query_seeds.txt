@@ -1,0 +1,15 @@
+# Reddit搜索关键词列表
+# 每行一个关键词，脚本会将关键词拼接到Reddit搜索URL中
+# 以#开头的行会被忽略
+
+# 示例：
+workflow
+pipeline
+step by step
+here's how
+template
+
+
+
+
+
